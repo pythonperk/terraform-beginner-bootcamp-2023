@@ -1,5 +1,50 @@
 # Terraform Beginner Bootcamp 2023
 
+## Table of Contents
+
+- [Semantic Versioning](#semantic-versioning)
+- [Install the Terraform CLI](#install-the-terraform-cli)
+  - [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
+  - [Considerations for Linux Distributions](#considerations-for-linux-distributions)
+  - [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
+  - [Shebang Considerations](#shebang-considerations)
+    - [Execution Considerations](#execution-considerations)
+    - [Linux Permissions Considerations](#linux-permissions-considerations)
+  - [Github Lifecycle (Before,Init, Command)](#github-lifecycle-beforeinit-command)
+  - [Working Env Vars](#working-env-vars)
+  - [Env Command](#env-command)
+    - [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
+- [Printing Env Vars](#printing-env-vars)
+    - [Scoping of Env Vars](#scoping-of-env-vars)
+  - [Persisting Env Vars in Gitpod](#persisting-env-vars-in-gitpod)
+  - [AWS CLI Installation](#aws-cli-installation)
+- [Terraform Basics](#terraform-basics)
+  - [Terraform Registry](#terraform-registry)
+- [Terraform Console](#terraform-console)
+    - [Terraform Init](#terraform-init)
+    - [Terraform Plan](#terraform-plan)
+    - [Terraform Apply](#terraform-apply)
+    - [Terraform Destroy](#terraform-destroy)
+    - [Terraform Lock Files](#terraform-lock-files)
+    - [Terraform State Files](#terraform-state-files)
+    - [Terraform Directory](#terraform-directory)
+- [Issues with Terraform Cloud Login and Gitpod Workspace](#issues-with-terraform-cloud-login-and-gitpod-workspace)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Semantic Versioning :mage:
 
 This project is going to utilize semantic versioning for it's tagging.
@@ -140,7 +185,7 @@ When you open new bash terminals in VSCode it will not be aware of env vars that
 
 If you want env vars to persist across all future bash terminals that are open, you need to set env vars in your bash profile. eg. `.bash_profile`
 
-### Persisting Env VArs in Gitpod
+### Persisting Env Vars in Gitpod
 
 We can persist env vars into gitpod by storing them in Gitpod Secrets Storage.
 
